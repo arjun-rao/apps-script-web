@@ -1,0 +1,22 @@
+<!-- Load the jQuery and jQuery UI libraries. -->
+<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+    // process the form
+    $('form').submit(function(event) {
+         google.script.run.withSuccessHandler(onSuccess).shortenUrl($('input[name=url]').val());
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
+    });
+
+});
+
+function onSuccess(data){
+   var div = document.getElementById('result');
+   var resp = JSON.parse(data);
+   div.innerHTML = "Short URL: " + resp.url;  
+}
+</script>
+ 

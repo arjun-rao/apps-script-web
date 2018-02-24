@@ -1,0 +1,15 @@
+{
+  "timeZone": "Asia/Calcutta",
+  "dependencies": {
+    "enabledAdvancedServices": [{
+      "userSymbol": "UrlShortener",
+      "serviceId": "urlshortener",
+      "version": "v1"
+    }]
+  },
+  "webapp": {
+    "access": "ANYONE_ANONYMOUS",
+    "executeAs": "USER_DEPLOYING"
+  },
+  "exceptionLogging": "STACKDRIVER"
+}

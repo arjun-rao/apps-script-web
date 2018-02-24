@@ -1,7 +1,7 @@
 # Building a URL Shortener with Apps Script
 ---
 
-Documentation: [Web Apps](https://developers.google.com/apps-script/guides/web)
+Documentation: [Web Apps](https://developers.google.com/apps-script/guides/web) (Read about `doGet(e)`)
 
 Demo: [link](https://goo.gl/Nbd3ae)
 
@@ -75,4 +75,4 @@ Go ahead and complete the implementation of your web app by completing the follo
 # Step 5
 ---
 
-Deploy your app as a web app! s
+Deploy your app as a web app!

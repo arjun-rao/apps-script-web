@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron">
+        <form action="#" method="POST">
+        <!-- NAME -->
+         <div id="name-group" class="form-group">
+            <label for="name">URL</label>
+            <input type="text" class="form-control" name="url" placeholder="https://developers.google.com/">
+            <!-- errors will go here -->
+        </div>
+        <button type="submit" class="btn btn-success">Shrink!</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <?!= HtmlService.createHtmlOutputFromFile('javascript').getContent(); ?>
+  </body>
+</html>
+
+
